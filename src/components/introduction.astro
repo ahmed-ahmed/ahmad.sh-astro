@@ -1,0 +1,85 @@
+---
+const skills = [
+    {
+        skill: "Leadership",
+        text: "Skilled leader coaches team to success with enthusiasm and expertise.",
+    },
+    {
+        skill: "Java script",
+        text: `JavaScript expert writes code faster than a cheetah on Red Bull.`,
+    },
+    {
+        skill: "React",
+        text: "Experienced React developer crafts interactive and scalable applications.",
+    },
+    // {
+    // 	skill: "Dedication and Commitment",
+    // 	text: "Dedicated to delivering high-quality solutions and passionate about client success.",
+    // },
+    // {
+    // 	skill: "20 Years of Experience",
+    // 	text: "Vast industry experience across various companies, honing skills and expertise.",
+    // },
+    {
+        skill: "Open to Growth",
+        text: "Always looking for new challenges and opportunities to learn and improve.",
+    },
+];
+---
+
+<section class="intro">
+    <div class="flex flex-col md:flex-row justify-between pt-20 ">
+        <div class="justify-center w-full md:w-6/12 mt-8 mb-16">
+            {
+                skills.map((a) => (
+                    <div class="bg-dark mb-2 flex justify-between bg-neutral-750 px-8 py-6">
+                        <div class="">
+                            <h3 class="text-3xl code mb-4">{a.skill}</h3>
+                            <p class="text-lg mb-4 code">{a.text}</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-code" />
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+        <div class="flex flex-col w-full md:w-5/12 justify-start items-start">
+            <div class="mb-8">
+                <div class="text-sm mb-4">Hi there!</div>
+                <div class="text-4xl font-bold">
+                    <h1>I'm Ahmed Ahmed</h1>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6 leading-normal code">
+                <p>
+                    I am a front-end developer with a passion for creating
+                    intuitive and engaging user experiences. With 20 years of
+                    experience in the field, I have had the opportunity to work
+                    for some great companies in various industries and have
+                    honed my skills in problem-solving and JavaScript
+                    proficiency, particularly with the React framework.
+                </p>
+                <p>
+                    I am dedicated, driven, and always looking to learn and
+                    improve my skills. I am committed to delivering the best
+                    possible solutions to my clients and am passionate about
+                    helping them achieve success. As a leader, I strive to
+                    create a positive and collaborative team environment and am
+                    always looking for ways to inspire and motivate my
+                    colleagues.
+                </p>
+                <p>
+                    In my current role as a front-end team lead at Kroger, I
+                    have the opportunity to work on a wide range of projects and
+                    technologies, using my problem-solving skills and front-end
+                    development expertise to deliver high-quality products. I am
+                    excited to continue learning and growing as a developer, and
+                    am always open to new challenges and opportunities. If you
+                    have a project that you think I could be a good fit for,
+                    don't hesitate to reach out!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
